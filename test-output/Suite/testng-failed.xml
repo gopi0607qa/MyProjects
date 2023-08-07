@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="9" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="9" parallel="tests" name="Edge(failed)">
+    <parameter name="browsername" value="Edge"/>
+    <classes>
+      <class name="execution.Login">
+        <methods>
+          <include name="afterclass"/>
+          <include name="aftermethod"/>
+          <include name="beforesuite"/>
+          <include name="beforemethod"/>
+          <include name="beforeclass"/>
+          <include name="Invalid_Logintest"/>
+          <include name="aftersuite"/>
+        </methods>
+      </class> <!-- execution.Login -->
+    </classes>
+  </test> <!-- Edge(failed) -->
+  <test thread-count="9" parallel="tests" name="Chrome(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="execution.Login">
+        <methods>
+          <include name="afterclass"/>
+          <include name="aftermethod"/>
+          <include name="beforesuite"/>
+          <include name="beforemethod"/>
+          <include name="beforeclass"/>
+          <include name="Invalid_Logintest"/>
+          <include name="aftersuite"/>
+        </methods>
+      </class> <!-- execution.Login -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test thread-count="9" parallel="tests" name="Firefox(failed)">
+    <parameter name="browsername" value="Firefox"/>
+    <classes>
+      <class name="execution.Login">
+        <methods>
+          <include name="afterclass"/>
+          <include name="aftermethod"/>
+          <include name="beforemethod"/>
+          <include name="beforesuite"/>
+          <include name="beforeclass"/>
+          <include name="Invalid_Logintest" invocation-numbers="0"/>
+          <include name="aftersuite"/>
+        </methods>
+      </class> <!-- execution.Login -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
